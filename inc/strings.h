@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 void reverseWords(char str[]);
 
@@ -43,5 +44,58 @@ void trim(char str[]);
 void firstOccurrence(char str[], char ch);
 
 void allOccurrences(char str[], char word[]);
+
+void swapStrings(char str1[], char str2[]);
+
+void sortStrings(char str[][20], int n);
+
+void palindrome(char str[]);
+
+void highestFreq(char str[]);
+
+void removeDuplicate(char str[]);
+
+void duplicateChars(char str[]);
+
+void removeChars(char str1[], char str2[]);
+
+void rotation(char str1[], char str2[]);
+
+void reverseRecursion(char str[], int index);
+
+void permutation(char str[], int l, int r);
+
+void divideString(char str[], int n);
+
+void firstNonRepeat(char str[]);
+
+void containingWord(char arr[][20], int n, char word[]);
+
+void reverseWords(char str[]);
+
+void compress(char str[]);
+
+void naiveSearch(char text[], char pattern[]);
+
+void rabinKarp(char text[], char pattern[]);
+
+void longestUnique(char str[]);
+
+void interleavings(char str1[], char str2[],
+                   char result[], int i, int j, int m, int n);
+
+void anagram(char str1[], char str2[]);
+
+void countWords(char str[]);
+
+void stringToInt(char str[]);
+
+void removeBandAC(char str[]);
+
+void streamNonRepeat(char str[]);
+
+void removeAdjacent(char str[]);
+
+void secondHighestFreq(char str[]);
 
 #endif
