@@ -2,10 +2,6 @@
 
 
 
-/*
- * Prints every element of the array.
- * This function displays the given array values on the screen.
- */
 int printArray(int arr[] , int n)
 {
     if(n==0)
@@ -23,10 +19,6 @@ return 0;
 
 
 
-/*
- * Calculates the sum of the array elements.
- * This function adds all values in the array and prints the total.
- */
 int arrSum(int arr[],int n)
 {
     if(n==0)
@@ -46,10 +38,6 @@ int arrSum(int arr[],int n)
 
 
 
-/*
- * Finds the largest and smallest values.
- * This function prints the maximum and minimum values in the array.
- */
 int largeSmall(int a[],int n)
 {
     if(n==0)
@@ -81,10 +69,6 @@ int largeSmall(int a[],int n)
 
 
 
-/*
- * Counts odd and even numbers.
- * This function checks array values and prints how many are odd or even.
- */
 int oddEvenCnt(int arr[],int n)
 {
 int oddCnt=0;
@@ -116,18 +100,20 @@ return 0;
 int cpyElements(int arr[],int n)
 {
     int brr[n];
-if(n<=0)
-{
-    printf("0 element array\n");
-}
-    for(int i=0;i<n;i++)
+
+    if(n <= 0)
     {
-     brr[i]=arr[i];
-
+        printf("0 element array\n");
+        return 1;
     }
-    printArray(brr,n);
-    
 
+    for(int i = 0; i < n; i++)
+    {
+        brr[i] = arr[i];
+    }
+
+    printArray(brr, n);
+    return 0;
 }
 
 
@@ -213,8 +199,6 @@ void merge(int a[], int b[], int sizA, int sizB)
 void occur(int a[], int n)
 {
     int occ[10];
-    int maxCnt = 0;
-    int maxElement = a[0]; // To track which element has the max count
     
     for(int i = 0; i < n; i++)
     {
