@@ -247,9 +247,9 @@ void removeDup(int a[],int n)
                }
                n--;
                j--;
-           }
+            }
        }
-   }
+}
 }
 
 void revArr(int a[], int start, int end)
@@ -285,7 +285,7 @@ void rRotate(int a[],int n, int k)
    for(int i=0;i<n-1;i++)
    {
        a[i]=a[i+1];
-         }
+     }
           a[0]=temp;
     }
 }
@@ -298,7 +298,7 @@ void rRotate(int a[],int n, int k)
    for(int i=n-1;i>0;i--)
    {
        a[i]=a[i-1];
-         }
+     }
           a[0]=temp;
     }
 }
@@ -324,7 +324,7 @@ void arrUnion(int a[],int b[], int n1 , int n2)
         }
           if(found==0)
         {
-            printf("%d \n",b[i]);
+        printf("%d \n",b[i]);
         }
         
     }
