@@ -1,10 +1,6 @@
 #include <stdio.h>
 
 
-// ===========================================================
-// 8. NULL Pointer Safety
-// ===========================================================
-
 void nullPointerSafety(void)
 {
     int *p = NULL;
@@ -29,10 +25,6 @@ void nullPointerSafety(void)
 }
 
 
-// ===========================================================
-// 9. Passing Array to Function
-// ===========================================================
-
 void display(int *arr, int n)
 {
     int *ptr = arr;
@@ -48,10 +40,6 @@ void display(int *arr, int n)
 }
 
 
-// ===========================================================
-// 10. Visualizing Memory Addresses
-// ===========================================================
-
 void memoryAddresses(void)
 {
     int a = 10;
@@ -65,10 +53,6 @@ void memoryAddresses(void)
     printf("&c = %p\n", (void*)&c);
 }
 
-
-// ===========================================================
-// 11. Pointer to Pointer
-// ===========================================================
 
 void pointerToPointer(void)
 {
@@ -86,10 +70,6 @@ void pointerToPointer(void)
 }
 
 
-// ===========================================================
-// 12. Garbage Pointer
-// ===========================================================
-
 void garbagePointerDemo(void)
 {
     int *p;
@@ -106,10 +86,6 @@ void garbagePointerDemo(void)
     printf("Value = %d\n", *p);
 }
 
-
-// ===========================================================
-// 13. Pointer Type Compatibility
-// ===========================================================
 
 void pointerTypeCompatibility(void)
 {
